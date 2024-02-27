@@ -17,6 +17,8 @@ function M.setup(opts)
 		border = "rounded",
 	}
 	local win = vim.api.nvim_open_win(buf, true, opts)
+	local someinput = vim.fn.input("File: ")
+	print(someinput)
 end
 
 return M
